@@ -31,6 +31,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/admin', [AdminController::class, 'index'])->name('admin.dashboard');
         Route::post('/admin/approve/{registration}', [AdminController::class, 'approve'])->name('admin.approve');
         Route::post('/admin/reject/{registration}', [AdminController::class, 'reject'])->name('admin.reject');
+        Route::delete('/admin/registrations/{registration}', [AdminController::class, 'destroy'])->name('admin.destroy');
         Route::get('/admin/registrations/{registration}/pdf', [AdminController::class, 'downloadPdf'])->name('admin.downloadPdf');
         
         // User Management Routes

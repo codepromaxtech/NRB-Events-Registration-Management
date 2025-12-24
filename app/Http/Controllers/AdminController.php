@@ -34,6 +34,15 @@ class AdminController extends Controller
     public function downloadPdf(Registration $registration)
     {
         $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('pdf.visiting-card', compact('registration'));
-        return $pdf->download('visiting-card-' . $registration->id . '.pdf');
+        // Sanitize filename
+        $filename = preg_replace('/[^a-zA-Z0-9\s]/', '', $registration->name);
+        $filename = str_replace(' ', '_', $filename);
+        return $pdf->download($filename . '.pdf');
+    }
+
+    public function destroy(Registration $registration)
+    {
+        $registration->delete();
+        return redirect()->route('admin.dashboard')->with('status', 'Registration deleted successfully.');
     }
 }
