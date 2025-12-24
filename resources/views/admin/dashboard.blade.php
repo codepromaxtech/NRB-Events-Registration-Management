@@ -119,6 +119,7 @@
                                         <th class="px-6 py-4 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Email</th>
                                         <th class="px-6 py-4 text-left text-xs font-bold text-slate-700 uppercase tracking-wider hidden md:table-cell">Country</th>
                                         <th class="px-6 py-4 text-left text-xs font-bold text-slate-700 uppercase tracking-wider hidden lg:table-cell">Approved On</th>
+                                        <th class="px-6 py-4 text-left text-xs font-bold text-slate-700 uppercase tracking-wider">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody class="bg-white divide-y divide-slate-100">
@@ -130,6 +131,12 @@
                                             <td class="px-6 py-4 whitespace-nowrap text-slate-600 text-sm">{{ $registration->email }}</td>
                                             <td class="px-6 py-4 whitespace-nowrap text-slate-600 text-sm hidden md:table-cell">{{ $registration->country }}</td>
                                             <td class="px-6 py-4 whitespace-nowrap text-slate-600 text-sm hidden lg:table-cell">{{ $registration->updated_at->format('M d, Y') }}</td>
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                <a href="{{ route('admin.downloadPdf', $registration) }}" class="inline-flex items-center px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold rounded-md shadow-sm transition-colors">
+                                                    <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                                    PDF
+                                                </a>
+                                            </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
