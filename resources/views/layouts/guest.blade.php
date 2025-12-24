@@ -40,6 +40,13 @@
                         Back to home
                     </a>
                 </div>
+                
+                <!-- Developer Credit -->
+                <div class="mt-8 text-center">
+                    <p class="text-xs text-slate-500">
+                        Developed by <a href="https://codepromax.com.de/" target="_blank" class="text-brand-green hover:text-emerald-700 font-medium transition-colors">CodeProMax Tech</a>
+                    </p>
+                </div>
             </div>
         </div>
     </body>

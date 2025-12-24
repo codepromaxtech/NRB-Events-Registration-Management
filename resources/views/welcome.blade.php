@@ -123,7 +123,11 @@
                     </a>
                 </div>
                 <div class="mt-8 md:order-1 md:mt-0">
-                    <p class="text-center text-sm leading-5 text-slate-500">&copy; 2025 NRB World. All rights reserved.</p>
+                    <p class="text-center text-sm leading-5 text-slate-500">
+                        &copy; 2025 NRB World. All rights reserved.
+                        <span class="mx-2 text-slate-300">|</span>
+                        Developed by <a href="https://codepromax.com.de/" target="_blank" class="text-emerald-600 hover:text-emerald-700 font-medium transition-colors">CodeProMax Tech</a>
+                    </p>
                 </div>
             </div>
         </footer>

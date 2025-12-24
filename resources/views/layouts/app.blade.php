@@ -31,6 +31,17 @@
             <main>
                 {{ $slot }}
             </main>
+
+            <!-- Footer -->
+            <footer class="bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700 mt-auto">
+                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                    <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+                        &copy; 2025 NRB World. All rights reserved.
+                        <span class="mx-2 text-gray-300 dark:text-gray-600">|</span>
+                        Developed by <a href="https://codepromax.com.de/" target="_blank" class="text-brand-green hover:text-emerald-700 font-medium transition-colors">CodeProMax Tech</a>
+                    </p>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
