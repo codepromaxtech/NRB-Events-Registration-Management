@@ -13,14 +13,23 @@
         
         <!-- Hero Header -->
         <div class="bg-gradient-to-r from-brand-green to-emerald-800 py-8 sm:py-12 shadow-2xl">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
-                <img src="{{ asset('images/logo.png') }}" alt="NRB World Logo" class="h-16 sm:h-20 md:h-24 w-auto mx-auto mb-4 sm:mb-6 drop-shadow-2xl">
-                <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">Registration Form</h1>
-                <p class="mt-2 sm:mt-3 text-base sm:text-lg md:text-xl text-white opacity-90">NRB Global Convention 2025</p>
-                <div class="mt-4 sm:mt-6 inline-flex items-center gap-2 bg-white bg-opacity-20 rounded-full px-3 sm:px-4 py-2 text-xs sm:text-sm text-white">
-                    <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <span class="hidden sm:inline">Application Deadline: September 30, 2025</span>
-                    <span class="sm:hidden">Deadline: Sep 30, 2025</span>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6">
+                <div class="flex flex-col md:flex-row items-center md:justify-start justify-center gap-6 md:gap-8">
+                    <!-- Logo (Left) -->
+                    <div class="shrink-0">
+                        <img src="{{ asset('images/logo.png') }}" alt="NRB World Logo" class="h-16 sm:h-20 md:h-24 w-auto drop-shadow-2xl">
+                    </div>
+                    
+                    <!-- Text (Right/Aligned) -->
+                    <div class="text-center md:text-left">
+                        <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight">Registration Form</h1>
+                        <p class="mt-1 sm:mt-2 text-base sm:text-lg md:text-xl text-white opacity-90 font-medium">NRB Global Convention 2025</p>
+                        <div class="mt-3 sm:mt-4 inline-flex items-center gap-2 bg-white bg-opacity-20 rounded-full px-3 sm:px-4 py-1.5 text-xs sm:text-sm text-white backdrop-blur-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span class="hidden sm:inline">Application Deadline: September 30, 2025</span>
+                            <span class="sm:hidden">Deadline: Sep 30, 2025</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
